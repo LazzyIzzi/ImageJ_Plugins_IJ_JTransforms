@@ -156,6 +156,7 @@ public class Plot_Transforms implements PlugIn, DialogListener {
 
 		gd.addDialogListener(this);
 		gd.setBackground(myColor);
+		gd.addHelp("https://lazzyizzi.github.io/JTransforms.html#Plot%20Transforms");
 		gd.showDialog();
 
 	}

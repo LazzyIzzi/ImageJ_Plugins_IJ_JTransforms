@@ -235,6 +235,7 @@ public class Plot_Operations implements PlugIn, DialogListener {
 
 		gd.addDialogListener(this);
 		gd.setBackground(myColor);
+		gd.addHelp("https://lazzyizzi.github.io/JTransforms.html#Plot%20Operations");
 		gd.showDialog();
 	}
 

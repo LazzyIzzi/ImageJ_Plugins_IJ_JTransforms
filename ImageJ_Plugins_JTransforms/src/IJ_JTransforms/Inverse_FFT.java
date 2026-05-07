@@ -115,6 +115,7 @@ public class Inverse_FFT implements PlugIn, DialogListener {
 		gd.addMessage(msg, myFont);
 		gd.addDialogListener(this);
 		gd.setBackground(myColor);
+		gd.addHelp("https://lazzyizzi.github.io/JTransforms.html#Inverse%20FFT");
 		gd.showDialog();
 
 		getSelections();

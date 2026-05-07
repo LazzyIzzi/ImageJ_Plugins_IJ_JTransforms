@@ -81,6 +81,7 @@ public class Discrete_Transforms implements PlugInFilter, DialogListener {
 		gd.addRadioButtonGroup("Direction", fwdInvChoices, 1, 2, fwdInvChoices[0]);
 		gd.setBackground(myColor);
 		gd.addDialogListener(this);
+		gd.addHelp("https://lazzyizzi.github.io/JTransforms.html#Discrete%20Transforms");
 		gd.showDialog();
 	}
 	

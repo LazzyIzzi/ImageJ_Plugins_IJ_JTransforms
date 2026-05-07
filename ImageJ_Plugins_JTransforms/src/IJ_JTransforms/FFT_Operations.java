@@ -127,6 +127,7 @@ public class FFT_Operations implements PlugInFilter, DialogListener {
 		gd.addMessage(msg, myFont);
 		gd.setBackground(myColor);
 		gd.addDialogListener(this);
+		gd.addHelp("https://lazzyizzi.github.io/JTransforms.html#FFT%20Operations");
 		gd.showDialog();		
 	}
 	

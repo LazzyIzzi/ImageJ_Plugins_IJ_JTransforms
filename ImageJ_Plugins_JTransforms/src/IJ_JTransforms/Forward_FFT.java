@@ -44,6 +44,7 @@ public class Forward_FFT implements PlugInFilter{//, DialogListener {
 			gd.addChoice("FFT", fftChoices, fftChoices[0]);
 		}
 		gd.setBackground(myColor);
+		gd.addHelp("https://lazzyizzi.github.io/JTransforms.html#Forward%20FFT");
 		gd.showDialog();
 
 	}
