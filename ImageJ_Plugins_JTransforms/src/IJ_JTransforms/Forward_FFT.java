@@ -11,6 +11,7 @@ import ij.process.ImageProcessor;
 //import java.awt.AWTEvent;
 import java.awt.Color;
 import java.awt.Font;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Properties;
@@ -51,6 +52,13 @@ public class Forward_FFT implements PlugInFilter{//, DialogListener {
 			
 	@Override
 	public void run(ImageProcessor ip) {
+        String dir =IJ.getDir("plugins");
+        String jarName = "JTransforms-3.1-with-dependencies.jar";
+        JarChecker jarck = new JarChecker();
+        if(jarck.findJarRecursively(dir,jarName)==false) {
+        IJ.error(jarName + " Not Found in the ImageJ plugins folders.\n"
+        		+ "Click \"Help\" for more information");
+        }
 		
 		DoDialog();
 		if (gd.wasCanceled()) {

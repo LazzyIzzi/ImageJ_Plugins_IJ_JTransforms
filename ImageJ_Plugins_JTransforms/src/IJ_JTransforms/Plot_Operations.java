@@ -136,6 +136,12 @@ public class Plot_Operations implements PlugIn, DialogListener {
 
 	@Override
 	public void run(String arg) {
+		String dir = IJ.getDir("plugins");
+		String jarName = "JTransforms-3.1-with-dependencies.jar";
+		JarChecker jarck = new JarChecker();
+		if (jarck.findJarRecursively(dir, jarName) == false) {
+			IJ.error(jarName + " Not Found in the ImageJ plugins folders.\n" + "Click \"Help\" for more information");
+		}
 
 		DoDialog();
 		if (gd.wasOKed()) {
